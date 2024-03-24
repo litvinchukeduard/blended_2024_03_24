@@ -13,9 +13,8 @@ WORKDIR $APP_HOME
 COPY . .
 
 # Terminal command
-RUN ls
-RUN python -m venv .venv
-RUN pip install colorama
+RUN pip install pipenv
+RUN pipenv install -r requirements.txt
 
 # For web apps
 # EXPOSE 8080
