@@ -3,6 +3,14 @@ version: '3.9' # Latest docker compose version
 
 services:
 
+  my-bot-cli:
+    build: .
+    container_name: my-bot-cli
+    volumes:
+      - .:/app
+    stdin_open: true # docker run -i
+    tty: true  
+
   mongo:
     image: mongo
     restart: always
