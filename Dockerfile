@@ -13,11 +13,10 @@ WORKDIR $APP_HOME
 COPY . .
 
 # Terminal command
-RUN pip install pipenv
-RUN pipenv install -r requirements.txt
+RUN pip install .
 
 # For web apps
 # EXPOSE 8080
 
 # Main entry point for our application
-ENTRYPOINT ["python", "main.py", "arg1"]
+ENTRYPOINT ["my-bot-cli"]

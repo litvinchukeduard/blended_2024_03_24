@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "my-bot"
+version = "1.0.0"
+dependencies = [
+  "colorama==0.4.6"
+]
+requires-python = ">=3.11"
+
+[project.scripts]
+my-bot-cli = "main:main_cli"

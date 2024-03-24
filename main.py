@@ -1,1 +1,4 @@
-print("Hello, world!")
+
+
+def main_cli():
+    print("Hello, world!")
